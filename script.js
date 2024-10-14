@@ -341,7 +341,7 @@ function robar() {
         resaltarNombre(tunoActual);
     }
     if (tunoActual >= jugadoresActivos.length) {
-        tunoActual = 0; // Reiniciar si llega al final del array
+        tunoActual = 0;
     }
     jugadorActivo = jugadoresActivos[tunoActual];
     jugadorActivo.turno = true;
