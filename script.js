@@ -60,19 +60,7 @@ class Jugador {
             console.log(carta);
         });
     }
-    // EN EL EXTRAÑO CASO DE QUE LA PARTIDA
-    // SE TERMINE POR FALTA DE CARTAS EN 
-    // EL MAZO, ESTA FUNCIÓN COMPARA QUIÉN
-    // TIENE MÁS CARTAS DE LOS 2 JUGADORES
-    // compararPuntos(jugador2){
-    //     if(this.puntos>jugador2.puntos){
-    //         this.ganador=true;
-    //     }else if(this.puntos<jugador2.puntos){
-    //         jugador2.ganador=true;
-    //     }else{
-    //         alert("¡VAYA, ES UN EMPATE!")
-    //     }
-    // }
+
     compararPuntos() {
         /*
         EN ESTA FUNCIÓN VAMOS A DETERMINAR QUIEN ES EL GANADOR
@@ -155,6 +143,7 @@ class Mazo {
             }
         }
     }
+
     // MUESTRA LAS CARTAS QUE HAY EN EL ARRAY
     mostrarCartas() {
         console.log("VAMOS A MOSTRAR LAS CARTAS");
@@ -196,7 +185,6 @@ botonRobar.addEventListener("click", robar);
 
 let botonPasarTurno = document.getElementById("btnPasar");
 botonPasarTurno.addEventListener("click", pasarTurno);
-
 
 // ESTA FUNCIÓN CALCULA LOS PUNTOS TOTALES
 // Y ACTUALIZA EL NÚMERO DE CARTAS DE 
